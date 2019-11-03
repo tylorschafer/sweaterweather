@@ -1,9 +1,9 @@
 require 'rails_helper'
-require_relative 'dummy_response'
+require_relative 'dummy_darksky_response'
 
 describe Forecast do
   it 'exists' do
-    dummy_response = File.read('spec/models/dummy_response.rb')
+    dummy_response = File.read('spec/models/dummy_darksky_response.rb')
     results = JSON.parse(dummy_response, symbolize_names: true)
     forecast = Forecast.new(results)
 
