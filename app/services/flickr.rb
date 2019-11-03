@@ -24,7 +24,7 @@ class Flickr
   end
 
   def returned_photos
-    photo_finder[:photos][:photo].map do |photo|
+    photo_finder[:photos][:photo].first(10).map do |photo|
       Photo.new(find_photo(photo[:id]))
     end
   end
@@ -33,7 +33,6 @@ class Flickr
 
   def json_response(response)
     JSON.parse(response.body[14..-2], symbolize_names: true)
-      .reject {}
   end
 
   def conn(params)
