@@ -5,10 +5,6 @@ class Darksky
     @long = long
   end
 
-  def self.forecast
-    new.create_forecast
-  end
-
   def create_forecast
     Forecast.new(json_response)
   end
