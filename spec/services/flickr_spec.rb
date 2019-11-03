@@ -21,4 +21,15 @@ describe Flickr do
     expect(results[:photo][:title][:_content]).to be_a String
     expect(results[:photo][:urls][:url][0][:_content]).to be_a String
   end
+
+  it 'returns a collection of found photos' do
+    service = Flickr.new('denver,co')
+
+    results = service.returned_photos
+
+    expect(results[0]).to be_a Photo
+
+    expect(results[0].image_url).to be_a String
+    expect(results[0].title).to be_a String
+  end
 end

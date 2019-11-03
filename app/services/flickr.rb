@@ -23,6 +23,12 @@ class Flickr
     json_response(response)
   end
 
+  def returned_photos
+    photo_finder[:photos][:photo].map do |photo|
+      Photo.new(find_photo(photo[:id]))
+    end
+  end
+
   private
 
   def json_response(response)
