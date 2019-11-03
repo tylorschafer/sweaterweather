@@ -14,6 +14,15 @@ class Flickr
     json_response(response)
   end
 
+  def find_photo(id)
+    params = {
+      photo_id: id,
+      method: 'flickr.photos.getInfo'
+    }
+    response = conn(params)
+    json_response(response)
+  end
+
   private
 
   def json_response(response)
