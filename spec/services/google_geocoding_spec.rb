@@ -9,6 +9,6 @@ describe GoogleGeocoding do
       'lng': -104.990251
     }
 
-    expect(result['data']).to eq(expected_results)
+    expect(result[:data]).to eq(expected_results)
   end
 end
