@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 describe 'Forecast Endpoints' do
-  it 'Returns a forecast for the requested location' do
+  xit 'Returns a forecast for the requested location' do
     response = get '/api/v1/forecast?location=denver,co'
 
     results = JSON.parse(response.body, symbolize_names: true)
@@ -34,7 +34,7 @@ describe 'Forecast Endpoints' do
     expect(results[:data][:weekly][0][:temp_high]).to exist
     expect(results[:data][:weekly][0][:temp_low]).to exist
     expect(results[:data][:weekly][5]).to_not exist
-    
+
     # expect(results[:data][:adress]).to exist
   end
 end

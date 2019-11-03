@@ -1,4 +1,4 @@
-class ForecastsController < ApplicationController
+class Api::V1::ForecastsController < ApplicationController
 
   def show
     render json: ForecastSerializer.new(Forecast.new(params[:location]))
