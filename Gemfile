@@ -9,6 +9,8 @@ gem 'puma', '~> 3.11'
 gem 'faraday'
 gem 'figaro'
 gem 'fast_jsonapi'
+gem 'devise'
+gem 'jwt'
 
 # gem 'redis', '~> 4.0'
 # gem 'bcrypt', '~> 3.1.7'
@@ -23,6 +25,8 @@ group :development, :test do
   gem 'faker'
   gem 'simplecov'
   gem 'rspec-rails'
+  gem 'vcr'
+  gem 'webmock'
 end
 
 group :development do

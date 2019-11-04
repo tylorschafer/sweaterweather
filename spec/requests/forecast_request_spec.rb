@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe 'Forecast Endpoints' do
+describe 'Forecast Endpoints', :vcr do
   it 'Returns a forecast for the requested location' do
     get '/api/v1/forecast?location=denver,co'
 
@@ -17,7 +17,7 @@ describe 'Forecast Endpoints' do
     expect(results[:data][:current][:timezone]).to be_a String
     expect(results[:data][:current][:app_temp]).to be_a Float
     expect(results[:data][:current][:humidity]).to be_a Float
-    expect(results[:data][:current][:visibility]).to be_an Integer
+    expect(results[:data][:current][:visibility]).to be_a (Float || Integer)
     expect(results[:data][:current][:day_summary]).to be_a String
     expect(results[:data][:current][:night_summary]).to be_a String
     expect(results[:data][:current][:uv]).to be_an Integer

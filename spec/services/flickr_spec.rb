@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe Flickr do
+describe Flickr, :vcr do
   it 'returns photos for a location' do
     service = Flickr.new('denver,co')
 
