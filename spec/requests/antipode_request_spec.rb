@@ -13,7 +13,7 @@ describe 'Antipode endpoint' do
     expect(results[:data][:attributes][:location_name]).to be_a String
     expect(results[:data][:attributes][:forecast]).to be_a Hash
     expect(results[:data][:attributes][:forecast][:summary]).to be_a String
-    expect(results[:data][:attributes][:forecast][:current_temperature]).to be_a String
+    expect(results[:data][:attributes][:forecast][:current_temperature]).to be_a Float
     expect(results[:data][:search_location]).to be_a String
   end
 end

@@ -13,11 +13,11 @@ class AntipodeSerializer
         attributes: {
           location_name: @found_city,
           forecast: {
-            summary: @forecast[:current][:summary] ,
-            current_temperature: @forecast[:current][:temp]
+            summary: @forecast.current[:summary],
+            current_temperature: @forecast.current[:temp]
           },
-          search_location: @searched_city
-        }
+        },
+      search_location: @searched_city
       }
     }.to_json
   end
