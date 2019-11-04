@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe Amypode do
+describe Amypode, :vcr do
   it 'It returns the antipode lat and long of supplied coordinates' do
     amy = Amypode.new(27, -0.82)
 

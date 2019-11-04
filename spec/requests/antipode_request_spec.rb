@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe 'Antipode endpoint' do
+describe 'Antipode endpoint', :vcr do
   it 'Returns the antipode city and forecast for that city' do
     get '/api/v1/antipode?location=hong+kong'
 
