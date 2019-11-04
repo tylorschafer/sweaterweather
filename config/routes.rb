@@ -5,6 +5,7 @@ Rails.application.routes.draw do
       get 'forecast', to: 'forecasts#show'
       get 'backgrounds', to: 'backgrounds#index'
       devise_for :users, controllers: { sessions: :sessions }
+      resource :user, only: [:show, :update]
     end
   end
 end
