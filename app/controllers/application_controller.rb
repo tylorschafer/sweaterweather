@@ -1,5 +1,5 @@
 class ApplicationController < ActionController::API
-  protect_from_forgery with: :null_session
+  # protect_from_forgery with: :null_session
 
   respond_to :json
 
@@ -27,10 +27,6 @@ class ApplicationController < ActionController::API
 
   def authenticate_user!(options = {})
     head :unauthorized unless signed_in?
-  end
-
-  def current_user
-    @current_user ||= super || User.find(@current_user_id)
   end
 
   def signed_in?
