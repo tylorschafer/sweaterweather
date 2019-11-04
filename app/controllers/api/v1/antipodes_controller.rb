@@ -6,7 +6,7 @@ class Api::V1::AntipodesController < ApplicationController
     found_city = find_city(lat, long)
     forecast = find_forecast(lat, long)
     render json: AntipodeSerializer.new(found_city, forecast, params[:location])
-      .serialized_json
+                                   .serialized_json
   end
 
   def find_forecast(lat, long)
