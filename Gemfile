@@ -9,6 +9,7 @@ gem 'puma', '~> 3.11'
 gem 'faraday'
 gem 'figaro'
 gem 'fast_jsonapi'
+gem 'devise'
 
 # gem 'redis', '~> 4.0'
 # gem 'bcrypt', '~> 3.1.7'
