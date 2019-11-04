@@ -4,7 +4,7 @@ Rails.application.routes.draw do
     namespace :v1 do
       get 'forecast', to: 'forecasts#show'
       get 'backgrounds', to: 'backgrounds#index'
-      devise_for :users, defaults: { format: :json }
+      devise_for :users, controllers: { sessions: :sessions }
     end
   end
 end
