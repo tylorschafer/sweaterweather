@@ -15,7 +15,7 @@ describe GoogleGeocoding do
   it 'Returns city information from lat and long arguments' do
     result = GoogleGeocoding.reverse_lookup(40.714224,-73.961452)
 
-    expected = { formatted_address: "279 Bedford Ave, Brooklyn, NY 11211, USA",}
+    expected = { city: " Brooklyn" }
 
     expect(result[:data]).to eq(expected)
   end

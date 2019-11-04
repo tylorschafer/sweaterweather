@@ -41,7 +41,9 @@ class GoogleGeocoding
 
   def format_reverse_find(result)
     formatted_resp = Hash.new
-    formatted_resp[:data] = result[:results][0][:formatted_address]
+    formatted_resp[:data] = {
+      city: result[:results][0][:formatted_address].split(',')[1]
+    }
     formatted_resp
   end
 end
