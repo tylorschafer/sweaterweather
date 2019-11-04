@@ -1,7 +1,7 @@
 class Api::V1::AntipodesController < ApplicationController
   def show
     coordinates = GoogleGeocoding.coordinates(params[:location])
-    amy = Amypode.new(coordinates[:data][:lat], coordinates[:data][:lng]).find_antipode
+    amy = Amypode.find_antipode(coordinates[:data][:lat], coordinates[:data][:lng])
     found_city = GoogleGeocoding.reverse_lookup(
       amy[:data][:attributes][:lat],amy[:data][:attributes][:long]
     )
