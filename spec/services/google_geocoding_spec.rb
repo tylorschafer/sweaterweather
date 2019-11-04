@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe GoogleGeocoding, :vcr do
+describe GoogleGeocoding do
   it 'Returns Lattitude and Longitude of a location' do
     result = GoogleGeocoding.coordinates('denver,co')
 
@@ -10,5 +10,13 @@ describe GoogleGeocoding, :vcr do
     }
 
     expect(result[:data]).to eq(expected_results)
+  end
+
+  it 'Returns city information from lat and long arguments' do
+    result = GoogleGeocoding.reverse_lookup(40.714224,-73.961452)
+
+    expected = { formatted_address: "279 Bedford Ave, Brooklyn, NY 11211, USA",}
+
+    expect(result[:data]).to eq(expected)
   end
 end
