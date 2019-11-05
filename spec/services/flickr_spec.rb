@@ -27,9 +27,6 @@ describe Flickr, :vcr do
 
     results = service.returned_photos
 
-    expect(results[0]).to be_a Photo
-
-    expect(results[0].image_url).to be_a String
-    expect(results[0].title).to be_a String
+    expect(results[0][:photo][:id]).to be_a String
   end
 end

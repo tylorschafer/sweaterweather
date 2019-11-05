@@ -25,7 +25,7 @@ class Flickr
 
   def returned_photos
     photo_finder[:photos][:photo].first(10).map do |photo|
-      Photo.new(find_photo(photo[:id]))
+      find_photo(photo[:id])
     end
   end
 
