@@ -7,16 +7,22 @@ class RoadTripFacade
   end
 
   def trip
+    Trip.new(trip_data, weather_data)
+  end
+
+  def trip_data
     trip_data = GoogleDirectionsService.trip_info(origin, destination)
-    formatted_trip = GoogleDirectionsPresenter.formatted_data(trip_data)
-    weather = DarkskyService.get_forecast(formatted_trip[:lat], formatted_trip[:long])
-    forecast = find_forecast(weather, formatted_trip)
-    Trip.new(formatted_trip, forecast)
+    GoogleDirectionsPresenter.formatted_data(trip_data)
+  end
+
+  def weather_data
+    DarkskyService.get_forecast(trip_data[:lat], trip_data[:long])
+    find_forecast(weather_data, trip_data)
   end
 
   def find_forecast(weather, routes)
-    arrival = hour_arrival(routes[:duration])
-    weather[:hourly][:data].find do |data|
+    arrival = hour_arrival(trip_data[:duration])
+    weather_data[:hourly][:data].find do |data|
       Time.at(data[:time]).strftime('%H') == arrival
     end
   end
