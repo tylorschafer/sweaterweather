@@ -1,5 +1,4 @@
 class GoogleDirectionsService
-
   def self.trip_info(origin, destination)
     new.find_trip(origin, destination)
   end

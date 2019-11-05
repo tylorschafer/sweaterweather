@@ -11,6 +11,6 @@ class GoogleGeocodingService
           address: location
         }
     end
-    result = JSON.parse(resp.body, symbolize_names: true)
+    JSON.parse(resp.body, symbolize_names: true)
   end
 end

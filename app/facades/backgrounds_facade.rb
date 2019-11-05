@@ -6,8 +6,8 @@ class BackgroundsFacade
   end
 
   def photos
-      service = FlickrService.new(location)
-      photos = service.returned_photos.map do |photo|
+      photo_data = FlickrService.get_photos(location)
+      photos = photo_data.map do |photo|
         Photo.new(photo)
       end
       photos
