@@ -20,6 +20,8 @@ class GoogleDirections
     response = find_trip(origin, destination)
     trip[:distance] = response[:routes][0][:legs][0][:distance][:text]
     trip[:duration] = response[:routes][0][:legs][0][:duration][:text]
+    trip[:lat] = response[:routes][0][:legs][0][:end_location][:lat]
+    trip[:long] = response[:routes][0][:legs][0][:end_location][:long]
     trip
   end
 end
