@@ -1,4 +1,4 @@
-class GoogleDirections
+class GoogleDirectionsService
 
   def self.trip_info(origin, destination)
     new.format_trip(origin, destination)

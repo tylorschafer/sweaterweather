@@ -1,0 +1,614 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.flickr.com/services/rest/?api_key=a7ab1a4164e9792dec1c1add83f76007&format=json&method=flickr.photos.search&tags=denver,co
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.17.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/javascript; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Tue, 05 Nov 2019 16:12:31 GMT
+      Server:
+      - Apache/2.4.41 (Ubuntu)
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 9cefde3a3c84cc779d3c26a39c2e4430.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - DEN50-C2
+      X-Amz-Cf-Id:
+      - fqWx9d6a0zwpwTICZ7Gi7CMqJvZ09rezQlu02NWKqdTLpEI7RoErVA==
+    body:
+      encoding: UTF-8
+      string: 'jsonFlickrApi({"photos":{"page":1,"pages":9141,"perpage":100,"total":"914058","photo":[{"id":"49019215691","owner":"151483626@N05","secret":"8a76e70079","server":"65535","farm":66,"title":"Clients
+        of Denver Concepts are able to trust this growing firm to deliver excellence
+        and operate with integrity.","ispublic":1,"isfriend":0,"isfamily":0},{"id":"49018652048","owner":"42564685@N03","secret":"6dde5ca875","server":"65535","farm":66,"title":"1998
+        Metal Universe Precious Metal Gems #3 Ed McCaffrey \/50","ispublic":1,"isfriend":0,"isfamily":0},{"id":"49019028187","owner":"138798666@N02","secret":"9c160520dc","server":"65535","farm":66,"title":"flatbed
+        tow truck Denver","ispublic":1,"isfriend":0,"isfamily":0},{"id":"49018182138","owner":"66944894@N06","secret":"b34409e9ed","server":"65535","farm":66,"title":"Snow
+        on Cobweb","ispublic":1,"isfriend":0,"isfamily":0},{"id":"49018585746","owner":"61914949@N00","secret":"06427ff5df","server":"65535","farm":66,"title":"","ispublic":1,"isfriend":0,"isfamily":0},{"id":"49017935143","owner":"45923298@N00","secret":"7516ac4e6e","server":"65535","farm":66,"title":"Manitou
+        Springs, CO The Timber Lodge motel sign","ispublic":1,"isfriend":0,"isfamily":0},{"id":"49018456616","owner":"45923298@N00","secret":"1b573c3d45","server":"65535","farm":66,"title":"Manitou
+        Springs, CO Mel-Haven Lodge motel sign","ispublic":1,"isfriend":0,"isfamily":0},{"id":"49018657992","owner":"45923298@N00","secret":"b778ddd17e","server":"65535","farm":66,"title":"Manitou
+        Springs, CO Ute Trading Post neon sign","ispublic":1,"isfriend":0,"isfamily":0},{"id":"49018456236","owner":"45923298@N00","secret":"36908aebd1","server":"65535","farm":66,"title":"Manitou
+        Springs, CO former service station","ispublic":1,"isfriend":0,"isfamily":0},{"id":"49018456006","owner":"45923298@N00","secret":"475d56b4e7","server":"65535","farm":66,"title":"Manitou
+        Springs, CO Patsy''s","ispublic":1,"isfriend":0,"isfamily":0},{"id":"49018455856","owner":"45923298@N00","secret":"0e3527dbd5","server":"65535","farm":66,"title":"Manitou
+        Springs, CO Second Empire building","ispublic":1,"isfriend":0,"isfamily":0},{"id":"49018656987","owner":"45923298@N00","secret":"b7c3deba55","server":"65535","farm":66,"title":"Manitou
+        Springs, CO Arcade neon sign","ispublic":1,"isfriend":0,"isfamily":0},{"id":"49017765801","owner":"66944894@N06","secret":"29e90f0b94","server":"65535","farm":66,"title":"Western
+        Sports","ispublic":1,"isfriend":0,"isfamily":0},{"id":"49016931483","owner":"146628561@N02","secret":"a8aa377b78","server":"65535","farm":66,"title":"Why
+        to Take Part in Yoga Classes? @ https:\/\/tinyurl.com\/yyakdyzm #Yoga #YogaTTC
+        #Yogi #YogaTraining","ispublic":1,"isfriend":0,"isfamily":0},{"id":"49017167032","owner":"185285041@N05","secret":"a55a0aa39b","server":"0","farm":0,"title":"Tips
+        To Locate A Expert Web Design Company","ispublic":1,"isfriend":0,"isfamily":0},{"id":"49017117372","owner":"39836272@N07","secret":"f9a7fbdb14","server":"65535","farm":66,"title":"Climbing
+        Raton Pass","ispublic":1,"isfriend":0,"isfamily":0},{"id":"49017068282","owner":"45923298@N00","secret":"435dfb6ce5","server":"65535","farm":66,"title":"Trinidad,
+        CO Mantelli''s","ispublic":1,"isfriend":0,"isfamily":0},{"id":"49017067462","owner":"45923298@N00","secret":"011b719d9e","server":"65535","farm":66,"title":"Trinidad,
+        CO Mantelli''s","ispublic":1,"isfriend":0,"isfamily":0},{"id":"49016991282","owner":"135433950@N06","secret":"77dfd59759","server":"65535","farm":66,"title":"smart
+        switchable glass, PDLC film, smart lcd film, privacy glass, intelligent glass,
+        magic glass,","ispublic":1,"isfriend":0,"isfamily":0},{"id":"49016673266","owner":"143787765@N02","secret":"d458f5c511","server":"65535","farm":66,"title":"Sunset
+        peeking under a layer of clouds and reflecting off another. 7-4-19, near Westminster
+        Station from Denver, Colorado.  ~ ~ ~ ~ ~  #Pixel2XL F\/1.8 4mm 1\/1064s ISO-52
+        #sunset #clouds #WestminsterStation #Denver #Colorado #oooShiny #oooShinyPhotos
+        #oooS","ispublic":1,"isfriend":0,"isfamily":0},{"id":"49015944623","owner":"33499543@N08","secret":"5ab5ec1203","server":"65535","farm":66,"title":"A-9589","ispublic":1,"isfriend":0,"isfamily":0},{"id":"49016462501","owner":"33499543@N08","secret":"90a65757c2","server":"65535","farm":66,"title":"A-9590","ispublic":1,"isfriend":0,"isfamily":0},{"id":"49016460261","owner":"33499543@N08","secret":"d23e521044","server":"65535","farm":66,"title":"A-9591","ispublic":1,"isfriend":0,"isfamily":0},{"id":"49015939993","owner":"33499543@N08","secret":"44de69c5ff","server":"65535","farm":66,"title":"A-9592","ispublic":1,"isfriend":0,"isfamily":0},{"id":"49016660712","owner":"33499543@N08","secret":"5bb01b9a36","server":"65535","farm":66,"title":"A-9593","ispublic":1,"isfriend":0,"isfamily":0},{"id":"49016454556","owner":"33499543@N08","secret":"029b98eb89","server":"65535","farm":66,"title":"A-9594","ispublic":1,"isfriend":0,"isfamily":0},{"id":"49016657507","owner":"33499543@N08","secret":"298337b6bc","server":"65535","farm":66,"title":"A-9595","ispublic":1,"isfriend":0,"isfamily":0},{"id":"49016451316","owner":"33499543@N08","secret":"16f14fd30c","server":"65535","farm":66,"title":"A-9596","ispublic":1,"isfriend":0,"isfamily":0},{"id":"49015931328","owner":"33499543@N08","secret":"915a18bc9e","server":"65535","farm":66,"title":"A-9597","ispublic":1,"isfriend":0,"isfamily":0},{"id":"49015929963","owner":"33499543@N08","secret":"e7db37f8b5","server":"65535","farm":66,"title":"A-9598","ispublic":1,"isfriend":0,"isfamily":0},{"id":"49016447326","owner":"33499543@N08","secret":"f19412e4fa","server":"65535","farm":66,"title":"A-9599","ispublic":1,"isfriend":0,"isfamily":0},{"id":"49016445901","owner":"33499543@N08","secret":"8e3ebfb269","server":"65535","farm":66,"title":"A-9600","ispublic":1,"isfriend":0,"isfamily":0},{"id":"49016444561","owner":"33499543@N08","secret":"07773e87d7","server":"65535","farm":66,"title":"A-9601","ispublic":1,"isfriend":0,"isfamily":0},{"id":"49015924388","owner":"33499543@N08","secret":"436a247349","server":"65535","farm":66,"title":"A-9602","ispublic":1,"isfriend":0,"isfamily":0},{"id":"49016441841","owner":"33499543@N08","secret":"d28fdf9c04","server":"65535","farm":66,"title":"A-9603","ispublic":1,"isfriend":0,"isfamily":0},{"id":"49016440721","owner":"33499543@N08","secret":"b8dc3d8452","server":"65535","farm":66,"title":"A-9604","ispublic":1,"isfriend":0,"isfamily":0},{"id":"49015919873","owner":"33499543@N08","secret":"738a44bb96","server":"65535","farm":66,"title":"A-9605","ispublic":1,"isfriend":0,"isfamily":0},{"id":"49015918508","owner":"33499543@N08","secret":"597090b5cb","server":"65535","farm":66,"title":"A-9606","ispublic":1,"isfriend":0,"isfamily":0},{"id":"49015917303","owner":"33499543@N08","secret":"c9083f9420","server":"65535","farm":66,"title":"A-9607","ispublic":1,"isfriend":0,"isfamily":0},{"id":"49015916363","owner":"33499543@N08","secret":"a9ea911d62","server":"65535","farm":66,"title":"A-9608","ispublic":1,"isfriend":0,"isfamily":0},{"id":"49016433691","owner":"33499543@N08","secret":"4c63816d7b","server":"65535","farm":66,"title":"A-9609","ispublic":1,"isfriend":0,"isfamily":0},{"id":"49015913118","owner":"33499543@N08","secret":"79ee07455b","server":"65535","farm":66,"title":"A-9610","ispublic":1,"isfriend":0,"isfamily":0},{"id":"49016430686","owner":"33499543@N08","secret":"e181f9d462","server":"65535","farm":66,"title":"A-9611","ispublic":1,"isfriend":0,"isfamily":0},{"id":"49016632597","owner":"33499543@N08","secret":"06b600996d","server":"65535","farm":66,"title":"A-9612","ispublic":1,"isfriend":0,"isfamily":0},{"id":"49016630942","owner":"33499543@N08","secret":"71b34599fc","server":"65535","farm":66,"title":"A-9613","ispublic":1,"isfriend":0,"isfamily":0},{"id":"49016629587","owner":"33499543@N08","secret":"91563a279a","server":"65535","farm":66,"title":"A-9614","ispublic":1,"isfriend":0,"isfamily":0},{"id":"49016628312","owner":"33499543@N08","secret":"9d162a3ec1","server":"65535","farm":66,"title":"A-9615","ispublic":1,"isfriend":0,"isfamily":0},{"id":"49016626722","owner":"33499543@N08","secret":"c41801f908","server":"65535","farm":66,"title":"A-9618","ispublic":1,"isfriend":0,"isfamily":0},{"id":"49016624657","owner":"33499543@N08","secret":"7fb68a91d6","server":"65535","farm":66,"title":"A-9616","ispublic":1,"isfriend":0,"isfamily":0},{"id":"49015900523","owner":"33499543@N08","secret":"bdca554a0f","server":"65535","farm":66,"title":"A-9617","ispublic":1,"isfriend":0,"isfamily":0},{"id":"49015898993","owner":"33499543@N08","secret":"ab03bbd622","server":"65535","farm":66,"title":"A-9619","ispublic":1,"isfriend":0,"isfamily":0},{"id":"49016416136","owner":"33499543@N08","secret":"52be20b61b","server":"65535","farm":66,"title":"A-9620","ispublic":1,"isfriend":0,"isfamily":0},{"id":"49016414831","owner":"33499543@N08","secret":"dd15f0125b","server":"65535","farm":66,"title":"A-9621","ispublic":1,"isfriend":0,"isfamily":0},{"id":"49016616862","owner":"33499543@N08","secret":"29e2203828","server":"65535","farm":66,"title":"A-9622","ispublic":1,"isfriend":0,"isfamily":0},{"id":"49016411866","owner":"33499543@N08","secret":"e2ba5857e1","server":"65535","farm":66,"title":"A-9623","ispublic":1,"isfriend":0,"isfamily":0},{"id":"49016614022","owner":"33499543@N08","secret":"14eb24daf7","server":"65535","farm":66,"title":"A-9624","ispublic":1,"isfriend":0,"isfamily":0},{"id":"49016499887","owner":"41438448@N05","secret":"258c15111d","server":"65535","farm":66,"title":"315\/365\/8","ispublic":1,"isfriend":0,"isfamily":0},{"id":"49015895967","owner":"41864041@N05","secret":"31af07eacf","server":"65535","farm":66,"title":"191102-F-XS730-2001","ispublic":1,"isfriend":0,"isfamily":0},{"id":"49015895367","owner":"41864041@N05","secret":"9292de7e9f","server":"65535","farm":66,"title":"191102-F-XS730-2002","ispublic":1,"isfriend":0,"isfamily":0},{"id":"49015894157","owner":"41864041@N05","secret":"c8a22286da","server":"65535","farm":66,"title":"191102-F-XS730-2003","ispublic":1,"isfriend":0,"isfamily":0},{"id":"49015688666","owner":"41864041@N05","secret":"23147cabc5","server":"65535","farm":66,"title":"191102-F-XS730-2004","ispublic":1,"isfriend":0,"isfamily":0},{"id":"49015892752","owner":"41864041@N05","secret":"ab080cdc17","server":"65535","farm":66,"title":"191102-F-XS730-2005","ispublic":1,"isfriend":0,"isfamily":0},{"id":"49015164668","owner":"41864041@N05","secret":"d4f8ef4338","server":"65535","farm":66,"title":"191102-F-XS730-2006","ispublic":1,"isfriend":0,"isfamily":0},{"id":"49015685321","owner":"41864041@N05","secret":"09dbf98659","server":"65535","farm":66,"title":"191102-F-XS730-2007","ispublic":1,"isfriend":0,"isfamily":0},{"id":"49015889072","owner":"41864041@N05","secret":"5e9cc93faa","server":"65535","farm":66,"title":"191102-F-XS730-2008","ispublic":1,"isfriend":0,"isfamily":0},{"id":"49015888172","owner":"41864041@N05","secret":"d9bdbbd81c","server":"65535","farm":66,"title":"191102-F-XS730-2009","ispublic":1,"isfriend":0,"isfamily":0},{"id":"49015887697","owner":"41864041@N05","secret":"5a8a26b444","server":"65535","farm":66,"title":"191102-F-XS730-2010","ispublic":1,"isfriend":0,"isfamily":0},{"id":"49015681966","owner":"41864041@N05","secret":"e847ed39d4","server":"65535","farm":66,"title":"191102-F-XS730-2011","ispublic":1,"isfriend":0,"isfamily":0},{"id":"49015159303","owner":"41864041@N05","secret":"ecbe6532e2","server":"65535","farm":66,"title":"191102-F-XS730-2012","ispublic":1,"isfriend":0,"isfamily":0},{"id":"49015885647","owner":"41864041@N05","secret":"5e05f75520","server":"65535","farm":66,"title":"191102-F-XS730-2013","ispublic":1,"isfriend":0,"isfamily":0},{"id":"49015884857","owner":"41864041@N05","secret":"d76ec1b0d7","server":"65535","farm":66,"title":"191102-F-XS730-2014","ispublic":1,"isfriend":0,"isfamily":0},{"id":"49015679121","owner":"41864041@N05","secret":"473dec5d69","server":"65535","farm":66,"title":"191102-F-XS730-2015","ispublic":1,"isfriend":0,"isfamily":0},{"id":"49015677816","owner":"41864041@N05","secret":"7d53facb75","server":"65535","farm":66,"title":"191102-F-XS730-2016","ispublic":1,"isfriend":0,"isfamily":0},{"id":"49015881822","owner":"41864041@N05","secret":"519f65241c","server":"65535","farm":66,"title":"191102-F-XS730-2017","ispublic":1,"isfriend":0,"isfamily":0},{"id":"49015676221","owner":"41864041@N05","secret":"6126e5a395","server":"65535","farm":66,"title":"191102-F-XS730-2018","ispublic":1,"isfriend":0,"isfamily":0},{"id":"49015675516","owner":"41864041@N05","secret":"b1862f05ab","server":"65535","farm":66,"title":"191102-F-XS730-2019","ispublic":1,"isfriend":0,"isfamily":0},{"id":"49015152588","owner":"41864041@N05","secret":"4ba2244d37","server":"65535","farm":66,"title":"191102-F-XS730-2020","ispublic":1,"isfriend":0,"isfamily":0},{"id":"49015674216","owner":"41864041@N05","secret":"15312082b1","server":"65535","farm":66,"title":"191102-F-XS730-2021","ispublic":1,"isfriend":0,"isfamily":0},{"id":"49015150303","owner":"41864041@N05","secret":"603d5c6a30","server":"65535","farm":66,"title":"191102-F-XS730-2022","ispublic":1,"isfriend":0,"isfamily":0},{"id":"49015876262","owner":"41864041@N05","secret":"0bc3b23011","server":"65535","farm":66,"title":"191102-F-XS730-2023","ispublic":1,"isfriend":0,"isfamily":0},{"id":"49015670946","owner":"41864041@N05","secret":"cd9528c468","server":"65535","farm":66,"title":"191102-F-XS730-2024","ispublic":1,"isfriend":0,"isfamily":0},{"id":"49015669331","owner":"41864041@N05","secret":"72ec1ab007","server":"65535","farm":66,"title":"191102-F-XS730-2025","ispublic":1,"isfriend":0,"isfamily":0},{"id":"49015669036","owner":"41864041@N05","secret":"8c7dbb007a","server":"65535","farm":66,"title":"191102-F-XS730-2026","ispublic":1,"isfriend":0,"isfamily":0},{"id":"49015873132","owner":"41864041@N05","secret":"004805417d","server":"65535","farm":66,"title":"191102-F-XS730-2027","ispublic":1,"isfriend":0,"isfamily":0},{"id":"49015667931","owner":"41864041@N05","secret":"3f57bcc852","server":"65535","farm":66,"title":"191102-F-XS730-2028","ispublic":1,"isfriend":0,"isfamily":0},{"id":"49015667286","owner":"41864041@N05","secret":"a1ff6fca42","server":"65535","farm":66,"title":"191102-F-XS730-2029","ispublic":1,"isfriend":0,"isfamily":0},{"id":"49015871052","owner":"41864041@N05","secret":"e8a42444cb","server":"65535","farm":66,"title":"191102-F-XS730-2030","ispublic":1,"isfriend":0,"isfamily":0},{"id":"49015143088","owner":"41864041@N05","secret":"1f33821c53","server":"65535","farm":66,"title":"191102-F-XS730-2031","ispublic":1,"isfriend":0,"isfamily":0},{"id":"49015665236","owner":"41864041@N05","secret":"53af1128e5","server":"65535","farm":66,"title":"191102-F-XS730-2032","ispublic":1,"isfriend":0,"isfamily":0},{"id":"49015663891","owner":"41864041@N05","secret":"849beb02ed","server":"65535","farm":66,"title":"191102-F-XS730-2033","ispublic":1,"isfriend":0,"isfamily":0},{"id":"49015867487","owner":"41864041@N05","secret":"f16a9d0aa6","server":"65535","farm":66,"title":"191102-F-XS730-2034","ispublic":1,"isfriend":0,"isfamily":0},{"id":"49015866202","owner":"41864041@N05","secret":"2f5b648daf","server":"65535","farm":66,"title":"191102-F-XS730-2035","ispublic":1,"isfriend":0,"isfamily":0},{"id":"49015865567","owner":"41864041@N05","secret":"420dff9dce","server":"65535","farm":66,"title":"191102-F-XS730-2036","ispublic":1,"isfriend":0,"isfamily":0},{"id":"49015138193","owner":"41864041@N05","secret":"fbf219a0e1","server":"65535","farm":66,"title":"191102-F-XS730-2037","ispublic":1,"isfriend":0,"isfamily":0},{"id":"49015137868","owner":"41864041@N05","secret":"25ec0acb5b","server":"65535","farm":66,"title":"191102-F-XS730-2038","ispublic":1,"isfriend":0,"isfamily":0},{"id":"49015659926","owner":"41864041@N05","secret":"cec871a49e","server":"65535","farm":66,"title":"191102-F-XS730-2039","ispublic":1,"isfriend":0,"isfamily":0},{"id":"49015659466","owner":"41864041@N05","secret":"dd337d426a","server":"65535","farm":66,"title":"191102-F-XS730-2040","ispublic":1,"isfriend":0,"isfamily":0},{"id":"49015136608","owner":"41864041@N05","secret":"2deaac4ff9","server":"65535","farm":66,"title":"191102-F-XS730-2041","ispublic":1,"isfriend":0,"isfamily":0},{"id":"49015135788","owner":"41864041@N05","secret":"ac48f5fc3c","server":"65535","farm":66,"title":"191102-F-XS730-2042","ispublic":1,"isfriend":0,"isfamily":0},{"id":"49015657691","owner":"41864041@N05","secret":"e531e2529a","server":"65535","farm":66,"title":"191102-F-XS730-2043","ispublic":1,"isfriend":0,"isfamily":0}]},"stat":"ok"})'
+    http_version: 
+  recorded_at: Tue, 05 Nov 2019 16:12:30 GMT
+- request:
+    method: get
+    uri: https://api.flickr.com/services/rest/?api_key=a7ab1a4164e9792dec1c1add83f76007&format=json&method=flickr.photos.getInfo&photo_id=49019215691
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.17.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/javascript; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Date:
+      - Tue, 05 Nov 2019 16:12:31 GMT
+      Server:
+      - Apache/2.4.41 (Ubuntu)
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 0f653303bc95b26f01daff2926667902.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - DEN50-C2
+      X-Amz-Cf-Id:
+      - pv3ghwsPwEFpD63qlr5gXKc6hVz3wYAcVHLrvgEZjp18PJo-ozIXbg==
+    body:
+      encoding: ASCII-8BIT
+      string: jsonFlickrApi({"photo":{"id":"49019215691","secret":"8a76e70079","server":"65535","farm":66,"dateuploaded":"1572969629","isfavorite":0,"license":"0","safety_level":"0","rotation":0,"originalsecret":"e45ee38316","originalformat":"png","owner":{"nsid":"151483626@N05","username":"DenverConcepts","realname":"Denver
+        Concepts","location":"","iconserver":"4720","iconfarm":5,"path_alias":"denverconcepts"},"title":{"_content":"Clients
+        of Denver Concepts are able to trust this growing firm to deliver excellence
+        and operate with integrity."},"description":{"_content":"Clients rely upon
+        Denver Concepts' ability to execute business plans and reach sales targets
+        on a regular basis. <a href=\"https:\/\/about.me\/denverconcepts\" rel=\"noreferrer
+        nofollow\">about.me\/denverconcepts<\/a> All of this is not only important,
+        but necessary for well-known brands when it comes to choosing an outsourced
+        partner."},"visibility":{"ispublic":1,"isfriend":0,"isfamily":0},"dates":{"posted":"1572969629","taken":"2019-11-05
+        08:00:29","takengranularity":0,"takenunknown":"1","lastupdate":"1572969631"},"views":"0","editability":{"cancomment":0,"canaddmeta":0},"publiceditability":{"cancomment":1,"canaddmeta":0},"usage":{"candownload":1,"canblog":0,"canprint":0,"canshare":1},"comments":{"_content":"0"},"notes":{"note":[]},"people":{"haspeople":0},"tags":{"tag":[{"id":"151478286-49019215691-179809","author":"151483626@N05","authorname":"DenverConcepts","raw":"B2B","_content":"b2b","machine_tag":false},{"id":"151478286-49019215691-2141","author":"151483626@N05","authorname":"DenverConcepts","raw":"Marketing","_content":"marketing","machine_tag":false},{"id":"151478286-49019215691-9669","author":"151483626@N05","authorname":"DenverConcepts","raw":"Denver","_content":"denver","machine_tag":false},{"id":"151478286-49019215691-3157","author":"151483626@N05","authorname":"DenverConcepts","raw":"Colorado","_content":"colorado","machine_tag":false},{"id":"151478286-49019215691-345055201","author":"151483626@N05","authorname":"DenverConcepts","raw":"Denver-Concepts","_content":"denverconcepts","machine_tag":false}]},"urls":{"url":[{"type":"photopage","_content":"https:\/\/www.flickr.com\/photos\/denverconcepts\/49019215691\/"}]},"media":"photo"},"stat":"ok"})
+    http_version: 
+  recorded_at: Tue, 05 Nov 2019 16:12:31 GMT
+- request:
+    method: get
+    uri: https://api.flickr.com/services/rest/?api_key=a7ab1a4164e9792dec1c1add83f76007&format=json&method=flickr.photos.getInfo&photo_id=49018652048
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.17.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/javascript; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Date:
+      - Tue, 05 Nov 2019 16:12:31 GMT
+      Server:
+      - Apache/2.4.41 (Ubuntu)
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 cddde15c11afac53ac9fe7978dcfecd7.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - DEN50-C2
+      X-Amz-Cf-Id:
+      - Tk4CWeKSGzl2qLCsXgJESpoNm3so17FxoIdhd2nTeAppnTCtkMLvCw==
+    body:
+      encoding: ASCII-8BIT
+      string: 'jsonFlickrApi({"photo":{"id":"49018652048","secret":"6dde5ca875","server":"65535","farm":66,"dateuploaded":"1572969201","isfavorite":0,"license":"0","safety_level":"0","rotation":0,"owner":{"nsid":"42564685@N03","username":"SanAntonioSpurs21","realname":"Shaun
+        Michael Thomas","location":"","iconserver":"8381","iconfarm":9,"path_alias":"sanantoniospurs21"},"title":{"_content":"1998
+        Metal Universe Precious Metal Gems #3 Ed McCaffrey \/50"},"description":{"_content":""},"visibility":{"ispublic":1,"isfriend":0,"isfamily":0},"dates":{"posted":"1572969201","taken":"2019-11-05
+        09:52:19","takengranularity":0,"takenunknown":"1","lastupdate":"1572969203"},"views":"0","editability":{"cancomment":0,"canaddmeta":0},"publiceditability":{"cancomment":1,"canaddmeta":0},"usage":{"candownload":0,"canblog":0,"canprint":0,"canshare":1},"comments":{"_content":"0"},"notes":{"note":[]},"people":{"haspeople":0},"tags":{"tag":[{"id":"42541631-49018652048-1724","author":"42564685@N03","authorname":"SanAntonioSpurs21","raw":"Ed","_content":"ed","machine_tag":false},{"id":"42541631-49018652048-552662","author":"42564685@N03","authorname":"SanAntonioSpurs21","raw":"McCaffrey","_content":"mccaffrey","machine_tag":false},{"id":"42541631-49018652048-9669","author":"42564685@N03","authorname":"SanAntonioSpurs21","raw":"Denver","_content":"denver","machine_tag":false},{"id":"42541631-49018652048-38645","author":"42564685@N03","authorname":"SanAntonioSpurs21","raw":"Broncos","_content":"broncos","machine_tag":false},{"id":"42541631-49018652048-14541","author":"42564685@N03","authorname":"SanAntonioSpurs21","raw":"Precious","_content":"precious","machine_tag":false},{"id":"42541631-49018652048-1042","author":"42564685@N03","authorname":"SanAntonioSpurs21","raw":"Metal","_content":"metal","machine_tag":false},{"id":"42541631-49018652048-45476","author":"42564685@N03","authorname":"SanAntonioSpurs21","raw":"Gems","_content":"gems","machine_tag":false},{"id":"42541631-49018652048-65289","author":"42564685@N03","authorname":"SanAntonioSpurs21","raw":"90''s","_content":"90s","machine_tag":false},{"id":"42541631-49018652048-1786","author":"42564685@N03","authorname":"SanAntonioSpurs21","raw":"Cards","_content":"cards","machine_tag":false},{"id":"42541631-49018652048-2481","author":"42564685@N03","authorname":"SanAntonioSpurs21","raw":"Football","_content":"football","machine_tag":false},{"id":"42541631-49018652048-6345","author":"42564685@N03","authorname":"SanAntonioSpurs21","raw":"NFL","_content":"nfl","machine_tag":false}]},"urls":{"url":[{"type":"photopage","_content":"https:\/\/www.flickr.com\/photos\/sanantoniospurs21\/49018652048\/"}]},"media":"photo"},"stat":"ok"})'
+    http_version: 
+  recorded_at: Tue, 05 Nov 2019 16:12:31 GMT
+- request:
+    method: get
+    uri: https://api.flickr.com/services/rest/?api_key=a7ab1a4164e9792dec1c1add83f76007&format=json&method=flickr.photos.getInfo&photo_id=49019028187
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.17.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/javascript; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Date:
+      - Tue, 05 Nov 2019 16:12:31 GMT
+      Server:
+      - Apache/2.4.41 (Ubuntu)
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 4b2d2d4c49521bf403522140b78283a1.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - DEN50-C2
+      X-Amz-Cf-Id:
+      - PLq2V8DrFZo9kqr8mCrmWLvWRzoYziV9DdaA_XRuBTFgL_9bMZHURw==
+    body:
+      encoding: ASCII-8BIT
+      string: jsonFlickrApi({"photo":{"id":"49019028187","secret":"9c160520dc","server":"65535","farm":66,"dateuploaded":"1572964767","isfavorite":0,"license":"0","safety_level":"0","rotation":0,"originalsecret":"9981c5c827","originalformat":"jpg","owner":{"nsid":"138798666@N02","username":"South
+        Denver Towing Company","realname":"Brian Johnson","location":"","iconserver":"4545","iconfarm":5,"path_alias":null},"title":{"_content":"flatbed
+        tow truck Denver"},"description":{"_content":"When the 'other guys' don't
+        cut it and you're wanting to go with a trustworthy flatbed tow truck company
+        near Denver, you can contact us here right now:\n<a href=\"http:\/\/towtruckdenverco.blogspot.com\/2019\/11\/roadside-assistance-denver.html\"
+        rel=\"noreferrer nofollow\">towtruckdenverco.blogspot.com\/2019\/11\/roadside-assistance...<\/a>"},"visibility":{"ispublic":1,"isfriend":0,"isfamily":0},"dates":{"posted":"1572964767","taken":"2019-11-05
+        06:39:27","takengranularity":0,"takenunknown":"1","lastupdate":"1572964768"},"views":"0","editability":{"cancomment":0,"canaddmeta":0},"publiceditability":{"cancomment":1,"canaddmeta":0},"usage":{"candownload":1,"canblog":0,"canprint":0,"canshare":1},"comments":{"_content":"0"},"notes":{"note":[]},"people":{"haspeople":0},"tags":{"tag":[{"id":"138778318-49019028187-151859","author":"138798666@N02","authorname":"South
+        Denver Towing Company","raw":"flatbed","_content":"flatbed","machine_tag":false},{"id":"138778318-49019028187-48023","author":"138798666@N02","authorname":"South
+        Denver Towing Company","raw":"tow","_content":"tow","machine_tag":false},{"id":"138778318-49019028187-1353","author":"138798666@N02","authorname":"South
+        Denver Towing Company","raw":"truck","_content":"truck","machine_tag":false},{"id":"138778318-49019028187-9669","author":"138798666@N02","authorname":"South
+        Denver Towing Company","raw":"Denver","_content":"denver","machine_tag":false}]},"urls":{"url":[{"type":"photopage","_content":"https:\/\/www.flickr.com\/photos\/138798666@N02\/49019028187\/"}]},"media":"photo"},"stat":"ok"})
+    http_version: 
+  recorded_at: Tue, 05 Nov 2019 16:12:31 GMT
+- request:
+    method: get
+    uri: https://api.flickr.com/services/rest/?api_key=a7ab1a4164e9792dec1c1add83f76007&format=json&method=flickr.photos.getInfo&photo_id=49018182138
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.17.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/javascript; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Date:
+      - Tue, 05 Nov 2019 16:12:32 GMT
+      Server:
+      - Apache/2.4.41 (Ubuntu)
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 b2e880ac67c1fba390623b9fc04bd63a.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - DEN50-C2
+      X-Amz-Cf-Id:
+      - vqf__sDzwGKfpMdkD6tln7IrQ08OfJx8NrAFuNI5B_Uvm9P_APNH1g==
+    body:
+      encoding: ASCII-8BIT
+      string: jsonFlickrApi({"photo":{"id":"49018182138","secret":"b34409e9ed","server":"65535","farm":66,"dateuploaded":"1572963082","isfavorite":0,"license":"0","safety_level":"0","rotation":0,"originalsecret":"aebec1b84c","originalformat":"jpg","owner":{"nsid":"66944894@N06","username":"Stewart
+        Robotham","realname":"Stewart Robotham","location":"Mansfield, England","iconserver":"4695","iconfarm":5,"path_alias":"stewartrobotham"},"title":{"_content":"Snow
+        on Cobweb"},"description":{"_content":"Photographed in Littleton, Colorado"},"visibility":{"ispublic":1,"isfriend":0,"isfamily":0},"dates":{"posted":"1572963082","taken":"2015-11-26
+        11:31:45","takengranularity":"0","takenunknown":"0","lastupdate":"1572968356"},"views":"24","editability":{"cancomment":0,"canaddmeta":0},"publiceditability":{"cancomment":1,"canaddmeta":0},"usage":{"candownload":1,"canblog":0,"canprint":0,"canshare":0},"comments":{"_content":"0"},"notes":{"note":[]},"people":{"haspeople":0},"tags":{"tag":[{"id":"66899572-49018182138-3157","author":"66944894@N06","authorname":"Stewart
+        Robotham","raw":"Colorado","_content":"colorado","machine_tag":0},{"id":"66899572-49018182138-252953","author":"66944894@N06","authorname":"Stewart
+        Robotham","raw":"Commonplace","_content":"commonplace","machine_tag":0},{"id":"66899572-49018182138-181087","author":"66944894@N06","authorname":"Stewart
+        Robotham","raw":"Commonplaces","_content":"commonplaces","machine_tag":0},{"id":"66899572-49018182138-9669","author":"66944894@N06","authorname":"Stewart
+        Robotham","raw":"Denver","_content":"denver","machine_tag":0},{"id":"66899572-49018182138-412","author":"66944894@N06","authorname":"Stewart
+        Robotham","raw":"Snow","_content":"snow","machine_tag":0},{"id":"66899572-49018182138-351","author":"66944894@N06","authorname":"Stewart
+        Robotham","raw":"USA","_content":"usa","machine_tag":0},{"id":"66899572-49018182138-936","author":"66944894@N06","authorname":"Stewart
+        Robotham","raw":"Weather","_content":"weather","machine_tag":0},{"id":"66899572-49018182138-870","author":"66944894@N06","authorname":"Stewart
+        Robotham","raw":"monochrome","_content":"monochrome","machine_tag":0},{"id":"66899572-49018182138-125370","author":"66944894@N06","authorname":"Stewart
+        Robotham","raw":"Littleton","_content":"littleton","machine_tag":0},{"id":"66899572-49018182138-4074","author":"66944894@N06","authorname":"Stewart
+        Robotham","raw":"United States","_content":"unitedstates","machine_tag":0}]},"location":{"latitude":"39.581903","longitude":"-105.133013","accuracy":"16","context":"0","locality":{"_content":"Ken
+        Caryl"},"county":{"_content":"Jefferson"},"region":{"_content":"Colorado"},"country":{"_content":"United
+        States"},"neighbourhood":{"_content":""}},"geoperms":{"ispublic":1,"iscontact":0,"isfriend":0,"isfamily":0},"urls":{"url":[{"type":"photopage","_content":"https:\/\/www.flickr.com\/photos\/stewartrobotham\/49018182138\/"}]},"media":"photo"},"stat":"ok"})
+    http_version: 
+  recorded_at: Tue, 05 Nov 2019 16:12:31 GMT
+- request:
+    method: get
+    uri: https://api.flickr.com/services/rest/?api_key=a7ab1a4164e9792dec1c1add83f76007&format=json&method=flickr.photos.getInfo&photo_id=49018585746
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.17.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/javascript; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Date:
+      - Tue, 05 Nov 2019 16:12:32 GMT
+      Server:
+      - Apache/2.4.41 (Ubuntu)
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 9c7e5857d78c5dc89042979317de5843.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - DEN50-C2
+      X-Amz-Cf-Id:
+      - nCTzW9tYM-C93AwATEOm-P2UWD8mt4Omtg-T72ndHJ4bSu2a10Eecg==
+    body:
+      encoding: ASCII-8BIT
+      string: jsonFlickrApi({"photo":{"id":"49018585746","secret":"06427ff5df","server":"65535","farm":66,"dateuploaded":"1572961371","isfavorite":0,"license":"2","safety_level":"0","rotation":0,"originalsecret":"d2cf1f0be1","originalformat":"jpg","owner":{"nsid":"61914949@N00","username":"Sean
+        Davis","realname":"","location":"Memphis, United States","iconserver":"7899","iconfarm":8,"path_alias":"seandavis"},"title":{"_content":""},"description":{"_content":""},"visibility":{"ispublic":1,"isfriend":0,"isfamily":0},"dates":{"posted":"1572961371","taken":"2019-09-07
+        12:53:45","takengranularity":"0","takenunknown":"0","lastupdate":"1572961490"},"views":"0","editability":{"cancomment":0,"canaddmeta":0},"publiceditability":{"cancomment":1,"canaddmeta":0},"usage":{"candownload":1,"canblog":0,"canprint":0,"canshare":1},"comments":{"_content":"0"},"notes":{"note":[]},"people":{"haspeople":0},"tags":{"tag":[{"id":"2138680-49018585746-8856","author":"61914949@N00","authorname":"Sean
+        Davis","raw":"Martial Arts","_content":"martialarts","machine_tag":false},{"id":"2138680-49018585746-9669","author":"61914949@N00","authorname":"Sean
+        Davis","raw":"Denver","_content":"denver","machine_tag":false},{"id":"2138680-49018585746-3157","author":"61914949@N00","authorname":"Sean
+        Davis","raw":"Colorado","_content":"colorado","machine_tag":false},{"id":"2138680-49018585746-6272","author":"61914949@N00","authorname":"Sean
+        Davis","raw":"United States of America","_content":"unitedstatesofamerica","machine_tag":false}]},"location":{"latitude":"39.744227","longitude":"-104.969259","accuracy":"16","context":"0","locality":{"_content":"Vine
+        Street Houses"},"county":{"_content":"Denver"},"region":{"_content":"Colorado"},"country":{"_content":"United
+        States"},"neighbourhood":{"_content":""}},"geoperms":{"ispublic":1,"iscontact":0,"isfriend":0,"isfamily":0},"urls":{"url":[{"type":"photopage","_content":"https:\/\/www.flickr.com\/photos\/seandavis\/49018585746\/"}]},"media":"photo"},"stat":"ok"})
+    http_version: 
+  recorded_at: Tue, 05 Nov 2019 16:12:31 GMT
+- request:
+    method: get
+    uri: https://api.flickr.com/services/rest/?api_key=a7ab1a4164e9792dec1c1add83f76007&format=json&method=flickr.photos.getInfo&photo_id=49017935143
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.17.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/javascript; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Date:
+      - Tue, 05 Nov 2019 16:12:32 GMT
+      Server:
+      - Apache/2.4.41 (Ubuntu)
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 ec4d04f2befcd6652834fd368a8b671e.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - DEN50-C2
+      X-Amz-Cf-Id:
+      - 9PZb19P5Zv9oEqdC0cAjrKSK5PAY__41E6CFmnxIQC8GtFI-XECEpg==
+    body:
+      encoding: ASCII-8BIT
+      string: jsonFlickrApi({"photo":{"id":"49017935143","secret":"7516ac4e6e","server":"65535","farm":66,"dateuploaded":"1572959772","isfavorite":0,"license":"0","safety_level":"0","rotation":0,"owner":{"nsid":"45923298@N00","username":"army.arch","realname":"","location":"USA","iconserver":"5445","iconfarm":6,"path_alias":"army_arch"},"title":{"_content":"Manitou
+        Springs, CO The Timber Lodge motel sign"},"description":{"_content":""},"visibility":{"ispublic":1,"isfriend":0,"isfamily":0},"dates":{"posted":"1572959772","taken":"2019-08-29
+        14:30:21","takengranularity":"0","takenunknown":"0","lastupdate":"1572962086"},"views":"1","editability":{"cancomment":0,"canaddmeta":0},"publiceditability":{"cancomment":1,"canaddmeta":1},"usage":{"candownload":0,"canblog":0,"canprint":0,"canshare":1},"comments":{"_content":"0"},"notes":{"note":[]},"people":{"haspeople":0},"tags":{"tag":[{"id":"3367927-49017935143-961","author":"45923298@N00","authorname":"army.arch","raw":"sign","_content":"sign","machine_tag":false},{"id":"3367927-49017935143-167318","author":"45923298@N00","authorname":"army.arch","raw":"manitou
+        springs","_content":"manitousprings","machine_tag":false},{"id":"3367927-49017935143-3157","author":"45923298@N00","authorname":"army.arch","raw":"colorado","_content":"colorado","machine_tag":false},{"id":"3367927-49017935143-17235","author":"45923298@N00","authorname":"army.arch","raw":"CO","_content":"co","machine_tag":false},{"id":"3367927-49017935143-8484","author":"45923298@N00","authorname":"army.arch","raw":"motel","_content":"motel","machine_tag":false}]},"urls":{"url":[{"type":"photopage","_content":"https:\/\/www.flickr.com\/photos\/army_arch\/49017935143\/"}]},"media":"photo"},"stat":"ok"})
+    http_version: 
+  recorded_at: Tue, 05 Nov 2019 16:12:31 GMT
+- request:
+    method: get
+    uri: https://api.flickr.com/services/rest/?api_key=a7ab1a4164e9792dec1c1add83f76007&format=json&method=flickr.photos.getInfo&photo_id=49018456616
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.17.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/javascript; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Date:
+      - Tue, 05 Nov 2019 16:12:32 GMT
+      Server:
+      - Apache/2.4.41 (Ubuntu)
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 c29390732f5bc4b2c7832623ae6e492f.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - DEN50-C2
+      X-Amz-Cf-Id:
+      - HUSOBP4Kvu1voTRsa2SaJKUtomUz2bQhqKd-f51_h1Aaio6IwUaCUA==
+    body:
+      encoding: ASCII-8BIT
+      string: jsonFlickrApi({"photo":{"id":"49018456616","secret":"1b573c3d45","server":"65535","farm":66,"dateuploaded":"1572959772","isfavorite":0,"license":"0","safety_level":"0","rotation":0,"owner":{"nsid":"45923298@N00","username":"army.arch","realname":"","location":"USA","iconserver":"5445","iconfarm":6,"path_alias":"army_arch"},"title":{"_content":"Manitou
+        Springs, CO Mel-Haven Lodge motel sign"},"description":{"_content":""},"visibility":{"ispublic":1,"isfriend":0,"isfamily":0},"dates":{"posted":"1572959772","taken":"2019-08-29
+        14:32:36","takengranularity":"0","takenunknown":"0","lastupdate":"1572965800"},"views":"2","editability":{"cancomment":0,"canaddmeta":0},"publiceditability":{"cancomment":1,"canaddmeta":1},"usage":{"candownload":0,"canblog":0,"canprint":0,"canshare":1},"comments":{"_content":"0"},"notes":{"note":[]},"people":{"haspeople":0},"tags":{"tag":[{"id":"3367927-49018456616-961","author":"45923298@N00","authorname":"army.arch","raw":"sign","_content":"sign","machine_tag":false},{"id":"3367927-49018456616-167318","author":"45923298@N00","authorname":"army.arch","raw":"manitou
+        springs","_content":"manitousprings","machine_tag":false},{"id":"3367927-49018456616-3157","author":"45923298@N00","authorname":"army.arch","raw":"colorado","_content":"colorado","machine_tag":false},{"id":"3367927-49018456616-17235","author":"45923298@N00","authorname":"army.arch","raw":"CO","_content":"co","machine_tag":false},{"id":"3367927-49018456616-8484","author":"45923298@N00","authorname":"army.arch","raw":"motel","_content":"motel","machine_tag":false}]},"urls":{"url":[{"type":"photopage","_content":"https:\/\/www.flickr.com\/photos\/army_arch\/49018456616\/"}]},"media":"photo"},"stat":"ok"})
+    http_version: 
+  recorded_at: Tue, 05 Nov 2019 16:12:32 GMT
+- request:
+    method: get
+    uri: https://api.flickr.com/services/rest/?api_key=a7ab1a4164e9792dec1c1add83f76007&format=json&method=flickr.photos.getInfo&photo_id=49018657992
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.17.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/javascript; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Date:
+      - Tue, 05 Nov 2019 16:12:32 GMT
+      Server:
+      - Apache/2.4.41 (Ubuntu)
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 ce4b35590464ed34415a13badd946ebb.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - DEN50-C2
+      X-Amz-Cf-Id:
+      - 0ywwmEgMwQbm66u2ancbamabHMSnJmi0fmIiECJ2r7O9VaGC0ZOYew==
+    body:
+      encoding: ASCII-8BIT
+      string: jsonFlickrApi({"photo":{"id":"49018657992","secret":"b778ddd17e","server":"65535","farm":66,"dateuploaded":"1572959772","isfavorite":0,"license":"0","safety_level":"0","rotation":0,"owner":{"nsid":"45923298@N00","username":"army.arch","realname":"","location":"USA","iconserver":"5445","iconfarm":6,"path_alias":"army_arch"},"title":{"_content":"Manitou
+        Springs, CO Ute Trading Post neon sign"},"description":{"_content":""},"visibility":{"ispublic":1,"isfriend":0,"isfamily":0},"dates":{"posted":"1572959772","taken":"2019-08-29
+        14:33:33","takengranularity":"0","takenunknown":"0","lastupdate":"1572962133"},"views":"9","editability":{"cancomment":0,"canaddmeta":0},"publiceditability":{"cancomment":1,"canaddmeta":1},"usage":{"candownload":0,"canblog":0,"canprint":0,"canshare":1},"comments":{"_content":"0"},"notes":{"note":[]},"people":{"haspeople":0},"tags":{"tag":[{"id":"3367927-49018657992-961","author":"45923298@N00","authorname":"army.arch","raw":"sign","_content":"sign","machine_tag":false},{"id":"3367927-49018657992-167318","author":"45923298@N00","authorname":"army.arch","raw":"manitou
+        springs","_content":"manitousprings","machine_tag":false},{"id":"3367927-49018657992-3157","author":"45923298@N00","authorname":"army.arch","raw":"colorado","_content":"colorado","machine_tag":false},{"id":"3367927-49018657992-17235","author":"45923298@N00","authorname":"army.arch","raw":"CO","_content":"co","machine_tag":false}]},"urls":{"url":[{"type":"photopage","_content":"https:\/\/www.flickr.com\/photos\/army_arch\/49018657992\/"}]},"media":"photo"},"stat":"ok"})
+    http_version: 
+  recorded_at: Tue, 05 Nov 2019 16:12:32 GMT
+- request:
+    method: get
+    uri: https://api.flickr.com/services/rest/?api_key=a7ab1a4164e9792dec1c1add83f76007&format=json&method=flickr.photos.getInfo&photo_id=49018456236
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.17.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/javascript; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Date:
+      - Tue, 05 Nov 2019 16:12:33 GMT
+      Server:
+      - Apache/2.4.41 (Ubuntu)
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 dc50b0effd72a7b2c19bcb0909cfae82.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - DEN50-C2
+      X-Amz-Cf-Id:
+      - rDmrZu7TXhAQcVzqJRUFlsKoot-je6sCeuWEZ2kB02MmNdg6_3BsWQ==
+    body:
+      encoding: ASCII-8BIT
+      string: 'jsonFlickrApi({"photo":{"id":"49018456236","secret":"36908aebd1","server":"65535","farm":66,"dateuploaded":"1572959773","isfavorite":0,"license":"0","safety_level":"0","rotation":0,"owner":{"nsid":"45923298@N00","username":"army.arch","realname":"","location":"USA","iconserver":"5445","iconfarm":6,"path_alias":"army_arch"},"title":{"_content":"Manitou
+        Springs, CO former service station"},"description":{"_content":"In the Manitou
+        Springs Historic District which is on the National Register on Historic Preservation
+        #83003516."},"visibility":{"ispublic":1,"isfriend":0,"isfamily":0},"dates":{"posted":"1572959773","taken":"2019-08-29
+        14:46:47","takengranularity":"0","takenunknown":"0","lastupdate":"1572969045"},"views":"28","editability":{"cancomment":0,"canaddmeta":0},"publiceditability":{"cancomment":1,"canaddmeta":1},"usage":{"candownload":0,"canblog":0,"canprint":0,"canshare":1},"comments":{"_content":"2"},"notes":{"note":[]},"people":{"haspeople":0},"tags":{"tag":[{"id":"3367927-49018456236-167318","author":"45923298@N00","authorname":"army.arch","raw":"manitou
+        springs","_content":"manitousprings","machine_tag":false},{"id":"3367927-49018456236-3157","author":"45923298@N00","authorname":"army.arch","raw":"colorado","_content":"colorado","machine_tag":false},{"id":"3367927-49018456236-17235","author":"45923298@N00","authorname":"army.arch","raw":"CO","_content":"co","machine_tag":false},{"id":"3367927-49018456236-10556","author":"45923298@N00","authorname":"army.arch","raw":"historic","_content":"historic","machine_tag":false},{"id":"3367927-49018456236-206551","author":"45923298@N00","authorname":"army.arch","raw":"historic
+        district","_content":"historicdistrict","machine_tag":false},{"id":"3367927-49018456236-98455","author":"45923298@N00","authorname":"army.arch","raw":"historic
+        preservation","_content":"historicpreservation","machine_tag":false},{"id":"3367927-49018456236-2094603","author":"45923298@N00","authorname":"army.arch","raw":"NRHP","_content":"nrhp","machine_tag":false},{"id":"3367927-49018456236-769553","author":"45923298@N00","authorname":"army.arch","raw":"national
+        register","_content":"nationalregister","machine_tag":false},{"id":"3367927-49018456236-907511","author":"45923298@N00","authorname":"army.arch","raw":"national
+        register of historic places","_content":"nationalregisterofhistoricplaces","machine_tag":false},{"id":"3367927-49018456236-20132","author":"45923298@N00","authorname":"army.arch","raw":"service","_content":"service","machine_tag":false},{"id":"3367927-49018456236-10764","author":"45923298@N00","authorname":"army.arch","raw":"gas","_content":"gas","machine_tag":false},{"id":"3367927-49018456236-933","author":"45923298@N00","authorname":"army.arch","raw":"station","_content":"station","machine_tag":false}]},"urls":{"url":[{"type":"photopage","_content":"https:\/\/www.flickr.com\/photos\/army_arch\/49018456236\/"}]},"media":"photo"},"stat":"ok"})'
+    http_version: 
+  recorded_at: Tue, 05 Nov 2019 16:12:32 GMT
+- request:
+    method: get
+    uri: https://api.flickr.com/services/rest/?api_key=a7ab1a4164e9792dec1c1add83f76007&format=json&method=flickr.photos.getInfo&photo_id=49018456006
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.17.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/javascript; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Date:
+      - Tue, 05 Nov 2019 16:12:33 GMT
+      Server:
+      - Apache/2.4.41 (Ubuntu)
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 cddde15c11afac53ac9fe7978dcfecd7.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - DEN50-C2
+      X-Amz-Cf-Id:
+      - N4xWyinlMNi95xTFNoNOx4sGZYUEgRQMLXWImWCPbMyfQIgcVFOhbg==
+    body:
+      encoding: ASCII-8BIT
+      string: 'jsonFlickrApi({"photo":{"id":"49018456006","secret":"475d56b4e7","server":"65535","farm":66,"dateuploaded":"1572959774","isfavorite":0,"license":"0","safety_level":"0","rotation":0,"owner":{"nsid":"45923298@N00","username":"army.arch","realname":"","location":"USA","iconserver":"5445","iconfarm":6,"path_alias":"army_arch"},"title":{"_content":"Manitou
+        Springs, CO Patsy''s"},"description":{"_content":"In the Manitou Springs Historic
+        District which is on the National Register on Historic Preservation #83003516."},"visibility":{"ispublic":1,"isfriend":0,"isfamily":0},"dates":{"posted":"1572959774","taken":"2019-08-29
+        14:49:21","takengranularity":"0","takenunknown":"0","lastupdate":"1572962177"},"views":"16","editability":{"cancomment":0,"canaddmeta":0},"publiceditability":{"cancomment":1,"canaddmeta":1},"usage":{"candownload":0,"canblog":0,"canprint":0,"canshare":1},"comments":{"_content":"0"},"notes":{"note":[]},"people":{"haspeople":0},"tags":{"tag":[{"id":"3367927-49018456006-167318","author":"45923298@N00","authorname":"army.arch","raw":"manitou
+        springs","_content":"manitousprings","machine_tag":false},{"id":"3367927-49018456006-3157","author":"45923298@N00","authorname":"army.arch","raw":"colorado","_content":"colorado","machine_tag":false},{"id":"3367927-49018456006-17235","author":"45923298@N00","authorname":"army.arch","raw":"CO","_content":"co","machine_tag":false},{"id":"3367927-49018456006-10556","author":"45923298@N00","authorname":"army.arch","raw":"historic","_content":"historic","machine_tag":false},{"id":"3367927-49018456006-206551","author":"45923298@N00","authorname":"army.arch","raw":"historic
+        district","_content":"historicdistrict","machine_tag":false},{"id":"3367927-49018456006-98455","author":"45923298@N00","authorname":"army.arch","raw":"historic
+        preservation","_content":"historicpreservation","machine_tag":false},{"id":"3367927-49018456006-2094603","author":"45923298@N00","authorname":"army.arch","raw":"NRHP","_content":"nrhp","machine_tag":false},{"id":"3367927-49018456006-769553","author":"45923298@N00","authorname":"army.arch","raw":"national
+        register","_content":"nationalregister","machine_tag":false},{"id":"3367927-49018456006-907511","author":"45923298@N00","authorname":"army.arch","raw":"national
+        register of historic places","_content":"nationalregisterofhistoricplaces","machine_tag":false}]},"urls":{"url":[{"type":"photopage","_content":"https:\/\/www.flickr.com\/photos\/army_arch\/49018456006\/"}]},"media":"photo"},"stat":"ok"})'
+    http_version: 
+  recorded_at: Tue, 05 Nov 2019 16:12:32 GMT
+recorded_with: VCR 4.0.0

@@ -1,4 +1,4 @@
-class Flickr
+class FlickrService
   attr_reader :location
 
   def initialize(location)

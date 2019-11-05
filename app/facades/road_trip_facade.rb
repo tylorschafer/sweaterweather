@@ -7,8 +7,8 @@ class RoadTripFacade
   end
 
   def trip
-    routes = GoogleDirections.trip_info(origin, destination)
-    weather = Darksky.new(routes[:lat], routes[:long]).json_response
+    routes = GoogleDirectionsService.trip_info(origin, destination)
+    weather = DarkskyService.new(routes[:lat], routes[:long]).json_response
     forecast = find_forecast(weather, routes)
     create_trip(routes, forecast)
   end

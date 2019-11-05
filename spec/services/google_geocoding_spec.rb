@@ -1,8 +1,8 @@
 require 'rails_helper'
 
-describe GoogleGeocoding, :vcr do
+describe GoogleGeocodingService, :vcr do
   it 'Returns Lattitude and Longitude of a location' do
-    result = GoogleGeocoding.coordinates('denver,co')
+    result = GoogleGeocodingService.coordinates('denver,co')
 
     expected_results = {
       'lat': 39.7392358,
