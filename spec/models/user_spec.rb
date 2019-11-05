@@ -6,7 +6,7 @@ describe User do
       user = create(:user)
       token = user.generate_token
       expect(token).to be_a String
-      expect(token.length).to eq(76)
+      expect(token.length).to be > 10
     end
   end
 end

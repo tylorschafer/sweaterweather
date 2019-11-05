@@ -1,4 +1,4 @@
-class GoogleGeocoding
+class GoogleGeocodingService
   def self.coordinates(location)
     new.find_coordinates(location)
   end

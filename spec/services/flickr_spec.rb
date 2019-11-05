@@ -1,8 +1,8 @@
 require 'rails_helper'
 
-describe Flickr, :vcr do
+describe FlickrService, :vcr do
   it 'returns photos for a location' do
-    service = Flickr.new('denver,co')
+    service = FlickrService.new('denver,co')
 
     results = service.photo_finder
 
@@ -12,7 +12,7 @@ describe Flickr, :vcr do
   end
 
   it 'returns a photos details from photo id' do
-    service = Flickr.new('denver,co')
+    service = FlickrService.new('denver,co')
 
     results = service.find_photo('49008133658')
 
@@ -23,13 +23,10 @@ describe Flickr, :vcr do
   end
 
   it 'returns a collection of found photos' do
-    service = Flickr.new('denver,co')
+    service = FlickrService.new('denver,co')
 
     results = service.returned_photos
 
-    expect(results[0]).to be_a Photo
-
-    expect(results[0].image_url).to be_a String
-    expect(results[0].title).to be_a String
+    expect(results[0][:photo][:id]).to be_a String
   end
 end

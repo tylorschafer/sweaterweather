@@ -1,12 +1,8 @@
-class Darksky
+class DarkskyService
 
   def initialize(lat, long)
     @lat = lat
     @long = long
-  end
-
-  def create_forecast
-    Forecast.new(json_response)
   end
 
   def json_response

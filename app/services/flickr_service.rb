@@ -1,4 +1,4 @@
-class Flickr
+class FlickrService
   attr_reader :location
 
   def initialize(location)
@@ -6,26 +6,20 @@ class Flickr
   end
 
   def photo_finder
-    params = {
-      tags: location,
-      method: 'flickr.photos.search'
-    }
+    params = { tags: location, method: 'flickr.photos.search' }
     response = conn(params)
     json_response(response)
   end
 
   def find_photo(id)
-    params = {
-      photo_id: id,
-      method: 'flickr.photos.getInfo'
-    }
+    params = { photo_id: id, method: 'flickr.photos.getInfo' }
     response = conn(params)
     json_response(response)
   end
 
   def returned_photos
     photo_finder[:photos][:photo].first(10).map do |photo|
-      Photo.new(find_photo(photo[:id]))
+      find_photo(photo[:id])
     end
   end
 

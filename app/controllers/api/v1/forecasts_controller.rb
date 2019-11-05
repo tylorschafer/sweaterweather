@@ -1,10 +1,6 @@
 class Api::V1::ForecastsController < ApplicationController
-
   def show
-    coordinates = GoogleGeocoding.coordinates(params[:location])
-    lat = coordinates[:data][:lat]
-    long = coordinates[:data][:lng]
-    forecast = Darksky.new(lat, long).create_forecast
-    render json: ForecastPresenter.to_json(forecast)
+    facade = ForecastsFacade.new(params[:location])
+    render json: ForecastSerializer.new(facade.forecast)
   end
 end
