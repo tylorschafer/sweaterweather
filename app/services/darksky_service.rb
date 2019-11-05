@@ -5,10 +5,6 @@ class DarkskyService
     @long = long
   end
 
-  def create_forecast
-    Forecast.new(json_response)
-  end
-
   def json_response
     resp = Faraday.get(
       "https://api.darksky.net/forecast/#{ENV['DARKSKY_API_KEY']}/#{@lat},#{@long}"

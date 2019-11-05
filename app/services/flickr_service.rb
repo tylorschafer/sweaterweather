@@ -6,19 +6,13 @@ class FlickrService
   end
 
   def photo_finder
-    params = {
-      tags: location,
-      method: 'flickr.photos.search'
-    }
+    params = { tags: location, method: 'flickr.photos.search' }
     response = conn(params)
     json_response(response)
   end
 
   def find_photo(id)
-    params = {
-      photo_id: id,
-      method: 'flickr.photos.getInfo'
-    }
+    params = { photo_id: id, method: 'flickr.photos.getInfo' }
     response = conn(params)
     json_response(response)
   end
