@@ -9,13 +9,13 @@ describe 'Road trip endpoint' do
     }
     post '/api/v1/road_trip', params: body, as: :json
 
-    results = JSON.parse(response.body)
+    results = JSON.parse(response.body, symbolize_names: true)
 
     expect(results).to be_a Hash
     expect(results[:data]).to be_a Hash
-    expect(results[:data][:trip_time]).to eq("1 hour 48 mins")
+    expect(results[:data][:trip_time]).to be_a String
     expect(results[:data][:weather_summary]).to be_a Hash
-    expect(results[:data[:weather_summary][:temp]]).to be_a Float
+    expect(results[:data][:weather_summary][:temperature]).to be_a Float
     expect(results[:data][:weather_summary][:summary]).to be_a String
   end
 end
