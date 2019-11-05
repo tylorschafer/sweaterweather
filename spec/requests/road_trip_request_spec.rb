@@ -15,10 +15,11 @@ describe 'Road trip endpoint', :vcr do
 
     expect(results).to be_a Hash
     expect(results[:data]).to be_a Hash
-    expect(results[:data][:trip_time]).to be_a String
-    expect(results[:data][:weather_summary]).to be_a Hash
-    expect(results[:data][:weather_summary][:temperature]).to be_a Float
-    expect(results[:data][:weather_summary][:summary]).to be_a String
+    expect(results[:data][:attributes][:distance]).to be_a String
+    expect(results[:data][:attributes][:duration]).to be_a String
+    expect(results[:data][:attributes][:weather_summary]).to be_a Hash
+    expect(results[:data][:attributes][:weather_summary][:temperature]).to be_a Float
+    expect(results[:data][:attributes][:weather_summary][:summary]).to be_a String
   end
 
   it 'Will not allow access without a valid API Token' do
