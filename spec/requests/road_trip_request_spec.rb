@@ -2,11 +2,12 @@ require 'rails_helper'
 
 describe 'Road trip endpoint' do
   it 'Returns travel time and weather summary for a trip' do
-    user = create(:user, token: "jgn983hy48thw9begh98h4539h4")
+    user = create(:user)
+    token = user.generate_token
     body = {
       "origin": "Denver,CO",
       "destination": "Pueblo,CO",
-      "api_key": "jgn983hy48thw9begh98h4539h4"
+      "api_key": token
     }
     post '/api/v1/road_trip', params: body, as: :json
 
@@ -21,12 +22,14 @@ describe 'Road trip endpoint' do
   end
 
   it 'Will not allow access without a valid API Token' do
+    user = create(:user)
+    token = user.generate_token
     body = {
       "origin": "Denver,CO",
       "destination": "Pueblo,CO",
-      "api_key": "jgn983hy48thw9begh98h4539h4"
+      "api_key": "fake token"
     }
     post '/api/v1/road_trip', params: body, as: :json
-    expect(response.body).to eq('Invalid Request')
+    expect(response.body).to eq('Invalid Key')
   end
 end
