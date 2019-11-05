@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe 'Forecast Endpoints', :vcr do
+describe 'Forecast Endpoints' do
   it 'Returns a forecast for the requested location' do
     get '/api/v1/forecast?location=denver,co'
 

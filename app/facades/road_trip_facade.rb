@@ -9,7 +9,7 @@ class RoadTripFacade
   def trip
     trip_data = GoogleDirectionsService.trip_info(origin, destination)
     formatted_trip = GoogleDirectionsPresenter.formatted_data(trip_data)
-    weather = DarkskyService.new(formatted_trip[:lat], formatted_trip[:long]).json_response
+    weather = DarkskyService.get_forecast(formatted_trip[:lat], formatted_trip[:long])
     forecast = find_forecast(weather, formatted_trip)
     Trip.new(formatted_trip, forecast)
   end

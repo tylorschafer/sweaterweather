@@ -1,10 +1,8 @@
 require 'rails_helper'
 
-describe DarkskyService, :vcr do
+describe DarkskyService do
   it 'returns forecast data for an address' do
-    service = DarkskyService.new(39.7392358, -104.990251)
-
-    results = service.json_response
+    results = DarkskyService.get_forecast(39.7392358, -104.990251)
 
     expect(results).to be_a Hash
     expect(results[:currently]).to be_a Hash

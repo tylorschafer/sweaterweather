@@ -6,11 +6,12 @@ class ForecastsFacade
   end
 
   def coordinates
-    GoogleGeocodingService.coordinates(location)[:data]
+    coor_data = GoogleGeocodingService.coordinates(location)
+    GoogleGeocodingPresenter.format_data(coor_data)[:data]
   end
 
   def forecast
-    forecast = DarkskyService.new(coordinates[:lat], coordinates[:lng])
-    Forecast.new(forecast.json_response)
+    forecast = DarkskyService.get_forecast(coordinates[:lat], coordinates[:lng])
+    Forecast.new(forecast)
   end
 end
