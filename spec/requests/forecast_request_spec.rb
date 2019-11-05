@@ -17,7 +17,7 @@ describe 'Forecast Endpoints', :vcr do
     expect(results[:data][:attributes][:current][:timezone]).to be_a String
     expect(results[:data][:attributes][:current][:app_temp]).to be_a Float
     expect(results[:data][:attributes][:current][:humidity]).to be_a Float
-    expect(results[:data][:attributes][:current][:visibility]).to be_a (Float || Integer)
+    expect(results[:data][:attributes][:current][:visibility]).to be_a (Integer)
     expect(results[:data][:attributes][:current][:day_summary]).to be_a String
     expect(results[:data][:attributes][:current][:night_summary]).to be_a String
     expect(results[:data][:attributes][:current][:uv]).to be_an Integer
