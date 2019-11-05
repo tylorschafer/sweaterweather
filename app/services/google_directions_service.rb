@@ -14,14 +14,4 @@ class GoogleDirectionsService
     end
     JSON.parse(response.body, symbolize_names: true)
   end
-
-  # def format_trip(origin, destination)
-  #   trip = Hash.new
-  #   response = find_trip(origin, destination)
-  #   trip[:distance] = response[:routes][0][:legs][0][:distance][:text]
-  #   trip[:duration] = response[:routes][0][:legs][0][:duration][:text]
-  #   trip[:lat] = response[:routes][0][:legs][0][:end_location][:lat]
-  #   trip[:long] = response[:routes][0][:legs][0][:end_location][:lng]
-  #   trip
-  # end
 end
