@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe GoogleDirections do
+describe GoogleDirections, :vcr do
   it 'Returns travel time for a trip' do
     trip = GoogleDirections.new.find_trip("Denver,CO", "Pueblo,CO")
 

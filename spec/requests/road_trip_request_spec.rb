@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe 'Road trip endpoint' do
+describe 'Road trip endpoint', :vcr do
   it 'Returns travel time and weather summary for a trip' do
     user = create(:user)
     token = user.generate_token
