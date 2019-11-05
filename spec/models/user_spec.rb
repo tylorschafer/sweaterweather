@@ -1,5 +1,12 @@
 require 'rails_helper'
 
-RSpec.describe User, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+describe User do
+  describe 'Instance methods' do
+    it '#generate token will generate a secure JWT' do
+      user = create(:user)
+      token = user.generate_token
+      expect(token).to be_a String
+      expect(token.length).to eq(77)
+    end
+  end
 end
