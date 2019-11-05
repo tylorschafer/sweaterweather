@@ -50,6 +50,8 @@ GEM
       msgpack (~> 1.0)
     builder (3.2.3)
     byebug (11.0.1)
+    chronic_duration (0.10.6)
+      numerizer (~> 0.1.1)
     coderay (1.1.2)
     concurrent-ruby (1.1.5)
     crack (0.4.3)
@@ -106,6 +108,7 @@ GEM
     nio4r (2.5.2)
     nokogiri (1.10.5)
       mini_portile2 (~> 2.4.0)
+    numerizer (0.1.1)
     orm_adapter (0.5.0)
     pg (1.1.4)
     pry (0.12.2)
@@ -205,6 +208,7 @@ PLATFORMS
 DEPENDENCIES
   bootsnap (>= 1.1.0)
   byebug
+  chronic_duration
   devise
   factory_bot_rails
   faker

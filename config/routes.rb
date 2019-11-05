@@ -4,6 +4,7 @@ Rails.application.routes.draw do
     namespace :v1 do
       get 'forecast', to: 'forecasts#show'
       get 'backgrounds', to: 'backgrounds#index'
+      post 'road_trip', to: 'road_trips#create'
       devise_for :users, controllers: { sessions: :sessions }
       post 'login', to: 'sessions#create'
     end
