@@ -1,11 +1,9 @@
-class ForecastSerializer
-attr_reader :forecast
-
-  def initialize(forecast)
-    @forecast = forecast
+class ForecastPresenter
+  def self.to_json(forecast)
+    new.serialized_json(forecast)
   end
 
-  def serialized_json
+  def serialized_json(forecast)
     {
       data: {
         current: forecast.current,

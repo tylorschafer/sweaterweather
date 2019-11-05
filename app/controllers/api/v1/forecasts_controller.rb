@@ -5,6 +5,6 @@ class Api::V1::ForecastsController < ApplicationController
     lat = coordinates[:data][:lat]
     long = coordinates[:data][:lng]
     forecast = Darksky.new(lat, long).create_forecast
-    render json: ForecastSerializer.new(forecast).serialized_json
+    render json: ForecastPresenter.to_json(forecast)
   end
 end

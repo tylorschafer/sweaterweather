@@ -1,9 +1,9 @@
-class RoadTripSerializer
-  def self.create(trip)
-    new.render_json_response(trip)
+class RoadTripPresenter
+  def self.to_json(trip)
+    new.serialized_json(trip)
   end
 
-  def render_json_response(trip)
+  def serialized_json(trip)
     {
       data: {
         trip_time: trip.duration ,

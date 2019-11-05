@@ -27,6 +27,6 @@ describe 'Road trip endpoint' do
       "api_key": "jgn983hy48thw9begh98h4539h4"
     }
     post '/api/v1/road_trip', params: body, as: :json
-    expect(response.body).to eq('Invalid Credentials')
+    expect(response.body).to eq('Invalid Request')
   end
 end

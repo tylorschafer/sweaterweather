@@ -4,9 +4,9 @@ class Api::V1::RoadTripsController < ApplicationController
     user = User.find_by(token: params[:api_key])
     if user
       trip_facade = RoadTripFacade.new(params[:origin], params[:destination])
-      render json: RoadTripSerializer.create(trip_facade.trip)
+      render json: RoadTripPresenter.to_json(trip_facade.trip)
     else
-      render json: 'Invalid Credentials'
+      render json: 'Invalid Request'
     end
   end
 end
