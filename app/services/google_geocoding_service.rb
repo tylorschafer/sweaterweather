@@ -11,15 +11,6 @@ class GoogleGeocodingService
           address: location
         }
     end
-    result = JSON.parse(resp.body, symbolize_names: true)
-    format_data(result)
-  end
-
-  private
-
-  def format_data(result)
-    formatted_resp = Hash.new
-    formatted_resp[:data] = result[:results][0][:geometry][:location]
-    formatted_resp
+    JSON.parse(resp.body, symbolize_names: true)
   end
 end

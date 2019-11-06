@@ -23,8 +23,6 @@ describe 'Road trip endpoint', :vcr do
   end
 
   it 'Will not allow access without a valid API Token' do
-    user = create(:user)
-    token = user.generate_token
     body = {
       "origin": "Denver,CO",
       "destination": "Pueblo,CO",
