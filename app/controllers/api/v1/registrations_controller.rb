@@ -2,8 +2,7 @@ class Api::V1::RegistrationsController < Devise::RegistrationsController
   def create
     user = User.create(sign_up_params)
     if user.save
-      token = user.generate_token
-      render json: { api_key: token }
+      render json: { api_key: user.generate_token }, status: 200
     else
       render json: { errors: user.errors }, status: :unprocessable_entity
     end
