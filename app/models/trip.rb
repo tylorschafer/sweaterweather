@@ -2,7 +2,7 @@ class Trip
   attr_reader :id, :distance, :duration, :weather_summary
 
   def initialize(trip_data = {}, forecast_data)
-    @id = 2
+    @id = 0
     @distance = trip_data[:distance]
     @duration = trip_data[:duration]
     @forecast_data = forecast_data
