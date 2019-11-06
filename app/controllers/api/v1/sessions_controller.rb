@@ -7,7 +7,7 @@ class Api::V1::SessionsController < ApplicationController
       render json: { errors: { 'email or password' => ['is invalid'] } },
              status: :unprocessable_entity
     end
-  enda
+  end
 
   private
 

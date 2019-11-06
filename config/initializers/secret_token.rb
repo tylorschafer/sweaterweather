@@ -1,1 +1,1 @@
-MyApp::Application.config.secret_token = ENV['SECRET_TOKEN']
+Rails.application.secrets.secret_key_base = ENV['SECRET_TOKEN']
