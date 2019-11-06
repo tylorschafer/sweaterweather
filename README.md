@@ -4,9 +4,12 @@ Sweater Weather is a Ruby on Rails REST API that returns weather, image, and nav
 
 **Developer Notes** 
 
-The main goal of this project was to get practice with consuming and exposing API enpoints, while adhearing to OOP principles of Abstraction, Encapsulation, SRP and DRY. If you would like to collaborate on this project, please follow the design patterns already implemented in this source code. I would love to hear your feedback
+The main goal of this project was to get practice with consuming and exposing API endpoints, while adhearing to OOP principles of Abstraction, Encapsulation, SRP and DRY. If you would like to collaborate on this project, please follow the design patterns already implemented in this source code. I would love to hear your feedback! 
 
-**Setup**
+**Development Link** 
+* https://ts-sweater-weather.herokuapp.com/
+
+**Local Setup**
 
 If you want to demo this application locally, follow these steps: 
   1. Clone this repo
