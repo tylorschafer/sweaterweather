@@ -2,7 +2,7 @@ class Forecast
   attr_reader :id, :current, :next_8_hrs, :next_5_days
 
   def initialize(resp = {})
-    @id = 1
+    @id = 0
     @current = load_current(resp)
     @next_8_hrs = load_hours(resp)
     @next_5_days = load_weekly(resp)
