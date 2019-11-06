@@ -20,8 +20,12 @@ If you want to demo this application locally, follow these steps:
 
 1. Forecast: `GET /api/v1/forecast?location=<USER_ENTERED_LOCATION>` 
   * Returns a forecast for the argument location. 
+  * Required: 
+    * params: {
+      'location' => <USER_ENTERED_LOCATION>
+    }
   * Example Response: 
-  ``` 
+``` 
   "data": {
         "id": "0",
         "type": "forecast",
@@ -76,5 +80,91 @@ If you want to demo this application locally, follow these steps:
         }
     }
 }
-    ```
+```
 
+2. Background `/api/v1/backgrounds?location=denver,co` 
+  * Returns background images for argument location 
+  * Required: 
+    * params: {
+      'location' => <USER_ENTERED_LOCATION>
+    }
+  * Example Response: 
+```
+  {
+    "data": [
+        {
+            "id": "0",
+            "type": "background",
+            "attributes": {
+                "image_url": "https://www.flickr.com/photos/markbyzewski/49021711496/",
+                "title": "A-9695"
+            }
+        },
+        {
+            "id": "0",
+            "type": "background",
+            "attributes": {
+                "image_url": "https://www.flickr.com/photos/135433950@N06/49021710761/",
+                "title": "smart switchable glass, PDLC film, smart lcd film, privacy glass, intelligent glass, magic glass,"
+            }
+        },
+       ...
+    ]
+}
+``` 
+
+3. Users `POST /api/v1/users` 
+  * Sends a request for profile creation, returns an API Key.
+  * Required: 
+    * raw JSON body: {
+        'email' => <YOUR_EMAIL> 
+        'password' => <CHOSEN_PASSWORD> 
+        'password_confiration' => <CHOSEN_PASSWORD> 
+      }
+  * Example Response: 
+```
+    {
+      "api_key": "eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MX0.-B84HosOGoEmzeRpPg01-l6j5ZMxTPbxPZo0JBKIQWY"
+    }
+```
+
+4. Sessions `POST /api/v1/sessions` 
+  * Sends a login request to the application, returns an API key.
+  * Required: 
+    * raw JSON body: {
+        'email' => <YOUR_EMAIL> 
+        'password' => <CHOSEN_PASSWORD> 
+      }
+  * Example Response: 
+```
+    {
+      "api_key": "eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MX0.-B84HosOGoEmzeRpPg01-l6j5ZMxTPbxPZo0JBKIQWY"
+    }
+```
+
+5. Road Trip `POST /api/v1/road_trip`
+  * Returns a road trip object containing travel time to destination, distance, and a weather summary for the time of arrival 
+  * Required: 
+    * raw JSON body: {
+        'origin' => <ORIGIN LOCATION> 
+        'destination' => <DESTINATION LOCATION> 
+        'api_key' => <YOUR USER API KEY> 
+      } 
+  * Example Response: 
+```
+  {
+    "data": {
+        "id": "0",
+        "type": "road_trip",
+        "attributes": {
+            "distance": "112 mi",
+            "duration": "1 hour 48 mins",
+            "weather_summary": {
+                "temperature": 35.55,
+                "summary": "Clear"
+            }
+        }
+    }
+}
+```
+  
