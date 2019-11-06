@@ -127,7 +127,7 @@ If you want to demo this application locally, follow these steps:
   * Example Response: 
 ```
     {
-      "api_key": "eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MX0.-B84HosOGoEmzeRpPg01-l6j5ZMxTPbxPZo0JBKIQWY"
+      "api_key": "jgn983hy48thw9begh98h4539h4"
     }
 ```
 
@@ -141,7 +141,7 @@ If you want to demo this application locally, follow these steps:
   * Example Response: 
 ```
     {
-      "api_key": "eyJhbGciOiJIUzI1NiJ9.eyJpZCI6MX0.-B84HosOGoEmzeRpPg01-l6j5ZMxTPbxPZo0JBKIQWY"
+      "api_key": "jgn983hy48thw9begh98h4539h4"
     }
 ```
 
