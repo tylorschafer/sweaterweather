@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe 'Road trip endpoint' do
+describe 'Road trip endpoint', :vcr do
   it 'Returns travel time and weather summary for a trip' do
     user = create(:user)
     token = user.generate_token
@@ -22,9 +22,7 @@ describe 'Road trip endpoint' do
     expect(results[:data][:attributes][:weather_summary][:summary]).to be_a String
   end
 
-  xit 'Will not allow access without a valid API Token' do
-    user = create(:user)
-    token = user.generate_token
+  it 'Will not allow access without a valid API Token' do
     body = {
       "origin": "Denver,CO",
       "destination": "Pueblo,CO",

@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe DarkskyService do
+describe DarkskyService, :vcr do
   it 'returns forecast data for an address' do
     results = DarkskyService.get_forecast(39.7392358, -104.990251)
 

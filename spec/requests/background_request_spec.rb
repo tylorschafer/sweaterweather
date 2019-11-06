@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe 'Backgrounds endpoint' do
+describe 'Backgrounds endpoint', :vcr do
   it 'Returns a random background image for the requested location' do
 
     get '/api/v1/backgrounds?location=denver,co'

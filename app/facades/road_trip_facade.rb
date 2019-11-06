@@ -16,13 +16,13 @@ class RoadTripFacade
   end
 
   def weather_data
-    DarkskyService.get_forecast(trip_data[:lat], trip_data[:long])
-    find_forecast(weather_data, trip_data)
+    data = DarkskyService.get_forecast(trip_data[:lat], trip_data[:long])
+    find_forecast(data)
   end
 
-  def find_forecast(weather, routes)
+  def find_forecast(weather)
     arrival = hour_arrival(trip_data[:duration])
-    weather_data[:hourly][:data].find do |data|
+    weather[:hourly][:data].find do |data|
       Time.at(data[:time]).strftime('%H') == arrival
     end
   end
