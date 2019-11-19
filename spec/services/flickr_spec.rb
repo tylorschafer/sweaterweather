@@ -4,7 +4,7 @@ describe FlickrService, :vcr do
   it 'returns photos for a location' do
     service = FlickrService.new
 
-    results = service.photos_finder('denver,co')
+    results = service.find_photos('denver,co')
 
     expect(results).to be_a Hash
     expect(results[:photos][:photo][0][:id]).to be_a String

@@ -3,7 +3,7 @@ class FlickrService
     new.returned_photos(location)
   end
 
-  def photos_finder(location)
+  def find_photos(location)
     params = { tags: location, method: 'flickr.photos.search' }
     response = conn(params)
     json_response(response)
@@ -16,7 +16,7 @@ class FlickrService
   end
 
   def returned_photos(location)
-    photos_finder(location)[:photos][:photo].first(10).map do |photo|
+    find_photos(location)[:photos][:photo].first(10).map do |photo|
       find_photo(photo[:id])
     end
   end
